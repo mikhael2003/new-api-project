@@ -1,7 +1,7 @@
 // (5) Buat router Mahasiswa
 const express = require('express')
 const router = express.Router() 
-const Mahasiswa = require('../models/Mahasiswa')
+const Mahasiswa = require('../models/Resto')
 
 // Create 
 router.post('/', async(req, res) => {
