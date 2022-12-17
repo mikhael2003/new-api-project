@@ -12,11 +12,10 @@ app.use(bodyParser.urlencoded({
     extended: true
 }));
 app.use(bodyParser.json());
-append.use(cors())
+app.use(cors())
 
 // (7) import routes
 const restoRoutes = require('./routes/resto')
-const { append } = require('vary')
 
 // (8) app.use (mendaftarkan middleware baru ke Express)
 app.use('/resto', restoRoutes)
