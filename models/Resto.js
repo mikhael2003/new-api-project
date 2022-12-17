@@ -1,7 +1,7 @@
 // (4) Buat Schema Mahasiswa
 const mongoose = require('mongoose')
 
-const MahasiswaSchema = mongoose.Schema({
+const RestoSchema = mongoose.Schema({
     // Buat Schema data
     nama: {
         type: String,
@@ -17,4 +17,4 @@ const MahasiswaSchema = mongoose.Schema({
     }
 })
 
-module.exports = mongoose.model('Mahasiswa', MahasiswaSchema)
+module.exports = mongoose.model('Resto', RestoSchema)
