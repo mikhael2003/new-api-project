@@ -38,7 +38,7 @@ router.put('/:restoId', async(req, res) => {
 
     try {
         // update data 
-        const mahasiswa = await Resto.updateOne({_id: req.params.restoId}, data)
+        const resto = await Resto.updateOne({_id: req.params.restoId}, data)
         // response
         res.json(resto)
     } catch (error) {
