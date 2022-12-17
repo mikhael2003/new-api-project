@@ -21,8 +21,8 @@ router.post('/', async(req, res) => {
 // Read
 router.get('/', async(req, res) => {
     try {
-        const Resto = await Resto.find()
-        res.json(Resto)
+        const resto = await Resto.find()
+        res.json(resto)
     } catch (error) {
         res.json({message: error})
     }
