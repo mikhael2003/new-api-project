@@ -1,4 +1,4 @@
-// (4) Buat Schema Mahasiswa
+// (4) Buat Schema 
 const mongoose = require('mongoose')
 
 const RestoSchema = mongoose.Schema({

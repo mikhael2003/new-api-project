@@ -4,7 +4,7 @@ const router = express.Router()
 const Resto = require('../models/Resto')
 
 
-router.post('/', async(req, res) => {
+router.post('/:restoid', async(req, res) => {
     const restoPost = new Resto({
         nama: req.body.nama,
         alamat: req.body.alamat
@@ -19,7 +19,7 @@ router.post('/', async(req, res) => {
 })
 
 // Read
-router.get('/', async(req, res) => {
+router.get('/:restoid', async(req, res) => {
     try {
         const resto = await Resto.find()
         res.json(resto)
